@@ -1,2 +1,0 @@
-# Atheer
-Store
