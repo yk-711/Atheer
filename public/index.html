@@ -1,0 +1,863 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="متجر سطول للسيدات والأطفال"><title>متجر سطول | متجر السيدات والأطفال</title><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"><link rel="stylesheet" href="store-sotool.css"></head><body dir="rtl">
+
+<div id="topbar">
+<div class="container">
+<div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+<div class="top-contact d-flex flex-wrap">
+<span><i class="fas fa-phone-alt"></i>٠٥٠ ١٢٣ ٤٥٦٧</span>
+<span><i class="fas fa-envelope"></i>hello@sotool.store</span>
+<span><i class="fas fa-map-marker-alt"></i>الرياض، المملكة العربية السعودية</span>
+</div>
+<div class="d-flex align-items-center gap-3">
+<span class="ttag"><i class="fas fa-fire me-1"></i>توصيل مجاني اليوم!</span>
+<div class="tsoc">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-tiktok"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<nav class="navbar navbar-expand-lg" id="nav">
+<div class="container">
+<a class="navbar-brand" href="#">
+<div class="blogo">
+<div class="bico"><img class="brand-logo-img" src="/manus-storage/sotool-logo-external_b17dfd92.png" alt="شعار متجر سطول"></div>
+<div>
+<div class="bname">متجر سطول</div>
+<div class="bsub">تليق بك &amp; سطول</div>
+</div>
+</div>
+</a>
+<div id="currencyBar" class="nav-tools"><button id="navSearchBtn" class="header-search-button" type="button" title="فتح البحث" aria-label="فتح البحث"><i class="fas fa-search"></i></button><button id="currencyToggle" class="currency-toggle" type="button" aria-label="تغيير العملة">💲 <span id="currencyShort">ر.س</span></button><select id="currencySelect" class="currency-hidden" aria-label="اختيار العملة"><option value="sar">ريال سعودي</option><option value="yer">ريال يمني</option><option value="usd">دولار أمريكي</option></select></div><button class="navbar-toggler border-0" data-bs-target="#navmenu" data-bs-toggle="collapse" type="button">
+<i class="fas fa-bars" style="color:var(--primary);font-size:1.35rem;"></i>
+</button>
+<div class="collapse navbar-collapse" id="navmenu">
+<ul class="navbar-nav mx-auto">
+<li class="nav-item"><a class="nav-link active" href="#hero">الرئيسية</a></li>
+
+<li class="nav-item"><a class="nav-link" href="#menu">المتجر</a></li>
+
+<li class="nav-item"><a class="nav-link" href="#reservation">الطلب</a></li>
+
+<li class="nav-item"><a class="nav-link" href="#contact-section">تواصل معنا</a></li>
+</ul>
+<div class="d-flex align-items-center gap-1">
+<a class="nav-link" href="/login.html" aria-label="تسجيل الدخول"><i class="fas fa-user me-1"></i>حسابي</a>
+
+
+<a class="nav-link nav-cta" href="#menu"><i class="fas fa-shopping-bag me-1"></i>تسوقي الآن</a>
+</div>
+</div>
+</div>
+</nav><div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+<div id="searchOv">
+<button class="sovclose" id="searchClose"><i class="fas fa-times"></i></button>
+<div class="sovbox">
+<h4>ما الذي تبحثين عنه اليوم؟</h4>
+<div class="sovinput">
+<input autocomplete="off" id="searchInput" placeholder="بحث burgers, pizza, chicken..." type="text"/>
+<button><i class="fas fa-search"></i></button>
+</div>
+
+<div id="searchStatus" class="search-status">اكتبي اسم المنتج أو الفئة للبحث السريع</div><div class="sovcats">
+<div class="sovcat active" data-cat="all">
+<img alt="" src="/manus-storage/1_7076fdf0.jpg"/>كل المنتجات
+               </div>
+<div class="sovcat" data-cat="burgers">
+<img alt="" src="/manus-storage/1_7076fdf0.jpg"/>للسيدات
+               </div>
+<div class="sovcat" data-cat="pizza">
+<img alt="" src="/manus-storage/2_6c2e29d6.jpg"/>للأطفال
+               </div>
+<div class="sovcat" data-cat="chicken">
+<img alt="" src="/manus-storage/3_a2a8084c.jpg"/>فساتين
+               </div>
+<div class="sovcat" data-cat="wraps">
+<img alt="" src="/manus-storage/4_e7ce8d85.jpg"/>أطقم
+               </div>
+<div class="sovcat" data-cat="pasta">
+<img alt="" src="/manus-storage/5_37e34b79.jpg"/>إكسسوارات
+               </div>
+<div class="sovcat" data-cat="desserts">
+<img alt="" src="/manus-storage/6_0bd9d411.jpg"/>عروض خاصة
+               </div>
+</div>
+<div class="sovtrend">
+<p><i class="fas fa-fire me-1" style="color:var(--secondary);"></i>Trending بحثes</p>
+<span class="ttag">عباية يومية</span>
+<span class="ttag">Nashville فساتين</span>
+<span class="ttag">Truffle للأطفال</span>
+<span class="ttag">إكسسارات شعر</span>
+<span class="ttag">عروض سطول</span>
+<span class="ttag">هدايا الصغار</span>
+</div>
+</div>
+</div>
+
+<section id="hero">
+<div class="hs hs1"></div>
+<div class="hs hs2"></div>
+<div class="hbgtxt">FOOD</div>
+<div class="container">
+<div class="row align-items-center g-5" style="min-height:88vh;">
+<div class="col-lg-6">
+<div class="hbadge">
+<div class="hbi"><i class="fas fa-star"></i></div>
+<span>اختيارات مميزة للسيدات والأطفال</span>
+</div>
+<h1 class="htitle">مختارات <span class="hl">تليق بك</span><br/>في كل لحظة</h1>
+<p class="hdesc">قطع مختارة بخامات جميلة وتفاصيل عملية؛ لأن كل يوم يستحق شيئاً يشبهك.</p>
+<div class="d-flex flex-wrap gap-3 mb-2">
+<a class="btn-red" href="#menu"><i class="fas fa-utensils"></i>اكتشفي المتجر</a>
+
+<a class="magnific_popup btn-play popup-youtube" href="https://www.youtube.com/watch?v=RXv_uIN6e-Y">
+<div class="pico"><i class="fas fa-play"></i></div>
+<span>شاهدي حكايتنا</span>
+</a>
+</div>
+<div class="hstats d-flex gap-3 flex-wrap mt-4">
+<div class="hstat"><span class="snum">850<em>+</em></span><small>عميلات سعيدات</small></div>
+<div class="sdiv"></div>
+<div class="hstat"><span class="snum">120<em>+</em></span><small>المتجر Items</small></div>
+<div class="sdiv"></div>
+<div class="hstat"><span class="snum">15<em>+</em></span><small>Expert المجموعات</small></div>
+<div class="sdiv"></div>
+<div class="hstat"><span class="snum">12<em>yr</em></span><small>من العناية</small></div>
+</div>
+</div>
+<div class="col-lg-6">
+<div style="position:relative;text-align:center;">
+<div class="hcircle">
+<img alt="قطعة" src="/manus-storage/banner-img_c276879a.jpg"/>
+</div>
+<div class="fcard fc1">
+<div class="fcoi r"><i class="fas fa-fire"></i></div>
+<div><span class="fcnum">عرض خاص</span><span class="fcsm">خصم 30% اليوم</span></div>
+</div>
+<div class="fcard fc2">
+<div class="fcoi y"><i class="fas fa-star"></i></div>
+<div><span class="fcnum">4.9/5</span><span class="fcsm">اختيارات موثوقة</span></div>
+</div>
+<div class="fcard fc3">
+<div class="fcoi g"><i class="fas fa-clock"></i></div>
+<div><span class="fcnum">توصيل سريع</span><span class="fcsm">نصل إليك بعناية</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="mqsec">
+<div class="mqtrack">
+<div class="mqitem"><i class="fas fa-circle"></i>Crispy Fried فساتين</div>
+<div class="mqitem"><i class="fas fa-circle"></i>Gourmet للسيدات</div>
+<div class="mqitem"><i class="fas fa-circle"></i>Artisan للأطفالs</div>
+<div class="mqitem"><i class="fas fa-circle"></i>Fresh أطقم &amp; Rolls</div>
+<div class="mqitem"><i class="fas fa-circle"></i>عروض سطول</div>
+<div class="mqitem"><i class="fas fa-circle"></i>هدايا صغيرة</div>
+<div class="mqitem"><i class="fas fa-circle"></i>إكسسوارات مختارة</div>
+<div class="mqitem"><i class="fas fa-circle"></i>Crispy Fried فساتين</div>
+<div class="mqitem"><i class="fas fa-circle"></i>Gourmet للسيدات</div>
+<div class="mqitem"><i class="fas fa-circle"></i>Artisan للأطفالs</div>
+<div class="mqitem"><i class="fas fa-circle"></i>Fresh أطقم &amp; Rolls</div>
+<div class="mqitem"><i class="fas fa-circle"></i>عروض سطول</div>
+<div class="mqitem"><i class="fas fa-circle"></i>هدايا صغيرة</div>
+<div class="mqitem"><i class="fas fa-circle"></i>إكسسوارات مختارة</div>
+</div>
+</div>
+
+<section id="category">
+<div class="container">
+<div class="text-center mb-5" data-aos="fade-up">
+<span class="slbl">ما نقدمه</span>
+<h2 class="stitle">تصفحي حسب <span>الفئة</span></h2>
+<div class="sline"></div>
+<p class="sdesc mx-auto" style="max-width:480px;">من القطع اليومية إلى التفاصيل الراقية، اختاري ما يرافق يومك.</p>
+</div>
+<div class="row g-3 justify-content-center">
+<div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="0">
+<div class="catcard active" data-filter="all">
+<img alt="" class="catimg" src="/manus-storage/1_802ce073.jpg"/>
+<div class="catnm">كل المنتجات</div>
+<div class="catct">99 items</div>
+</div>
+</div>
+<div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="70">
+<div class="catcard" data-filter="burgers">
+<img alt="" class="catimg" src="/manus-storage/2_b4dc6c49.jpg"/>
+<div class="catnm">للسيدات</div>
+<div class="catct">24 items</div>
+</div>
+</div>
+<div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="140">
+<div class="catcard" data-filter="pizza">
+<img alt="" class="catimg" src="/manus-storage/3_95fa756f.jpg"/>
+<div class="catnm">للأطفال</div>
+<div class="catct">18 items</div>
+</div>
+</div>
+<div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="210">
+<div class="catcard" data-filter="chicken">
+<img alt="" class="catimg" src="/manus-storage/4_45ca73d0.jpg"/>
+<div class="catnm">Fried فساتين</div>
+<div class="catct">15 items</div>
+</div>
+</div>
+<div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="280">
+<div class="catcard" data-filter="wraps">
+<img alt="" class="catimg" src="/manus-storage/5_42c618cd.jpg"/>
+<div class="catnm">أطقم</div>
+<div class="catct">12 items</div>
+</div>
+</div>
+<div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="350">
+<div class="catcard" data-filter="desserts">
+<img alt="" class="catimg" src="/manus-storage/6_2e047953.jpg"/>
+<div class="catnm">عروض خاصة</div>
+<div class="catct">20 items</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<section id="menu">
+<div class="container">
+<div class="text-center mb-5" data-aos="fade-up">
+<span class="slbl">مختاراتنا</span>
+<h2 class="stitle">Our مختارات <span>المتجر</span></h2>
+<div class="sline"></div>
+</div>
+
+<div class="text-center mb-4" data-aos="fade-up">
+<button class="filtbtn active" data-f="all">All</button>
+<button class="filtbtn" data-f="burgers">للسيدات</button>
+<button class="filtbtn" data-f="pizza">للأطفال</button>
+<button class="filtbtn" data-f="chicken">فساتين</button>
+<button class="filtbtn" data-f="wraps">أطقم</button>
+<button class="filtbtn" data-f="desserts">عروض خاصة</button>
+<button class="filtbtn" data-f="pasta">إكسسوارات</button>
+</div>
+<div class="catalog-tools" id="catalogTools"><div class="filter-buttons"><button class="filter-btn active" data-filter="all">الكل</button><button class="filter-btn" data-filter="women">السيدات</button><button class="filter-btn" data-filter="kids">الأطفال</button></div><label class="sort-control">ترتيب السعر<select id="sortSelect" aria-label="ترتيب المنتجات حسب السعر"><option value="default">الافتراضي</option><option value="low">من الأقل للأعلى</option><option value="high">من الأعلى للأقل</option></select></label></div><div class="row g-4" id="mgrid">
+
+<div class="col-sm-6 col-lg-4 mwrap" data-aos="fade-up" data-c="burgers">
+<div class="mcard" data-cal="620" data-cat="للسيدات" data-audience="women" data-desc="عباية يومية بقصة عملية وخامة مريحة، بتفاصيل هادئة تناسب إطلالتك اليومية." data-img="/manus-storage/1_7076fdf0.jpg" data-old="349 ر.س" data-price="289 ر.س" data-rating="4.9" data-reviews="128" data-tags="Spicy,Bestseller,Beef" data-time="12" data-title="Classic عباية يومية">
+<div class="mimg">
+<img alt="عباية يومية" src="/manus-storage/1_7076fdf0.jpg"/>
+<div class="mbdg hot"><i class="fas fa-star"></i> Hot</div>
+<div class="mhrt"><i class="far fa-heart"></i></div>
+</div>
+<div class="mbody">
+<div class="mcat">للسيدات</div>
+<div class="mtit">Classic عباية يومية</div>
+<div class="mdesc">Double smashed patty, cheddar, caramelized onions, pickles &amp; special sauce</div>
+<div class="mfoot">
+<div>
+<div class="mprice">289 ر.س <small>349 ر.س</small></div>
+<div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(128)</span></div>
+</div>
+<button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 col-lg-4 mwrap" data-aos="fade-up" data-aos-delay="80" data-c="pizza">
+<div class="mcard" data-cal="480" data-cat="للأطفال" data-audience="kids" data-desc="فستان ناعم بقصة لطيفة وتفاصيل مريحة لأيام الصغيرات." data-img="/manus-storage/2_6c2e29d6.jpg" data-old="279 ر.س" data-price="219 ر.س" data-rating="4.8" data-reviews="95" data-tags="Vegetarian,جديد,Italian" data-time="18" data-title="فستان غيمة للصغيرات">
+<div class="mimg">
+<img alt="للأطفال" src="/manus-storage/2_6c2e29d6.jpg"/>
+<div class="mbdg new"><i class="fas fa-star"></i> جديد</div>
+<div class="mhrt"><i class="far fa-heart"></i></div>
+</div>
+<div class="mbody">
+<div class="mcat">للأطفال</div>
+<div class="mtit">فستان غيمة للصغيرات</div>
+<div class="mdesc">San Marzano tomatoes, buffalo mozzarella, basil &amp; truffle oil on sourdough</div>
+<div class="mfoot">
+<div>
+<div class="mprice">219 ر.س <small>279 ر.س</small></div>
+<div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(95)</span></div>
+</div>
+<button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 col-lg-4 mwrap" data-aos="fade-up" data-aos-delay="160" data-c="chicken">
+<div class="mcard" data-cal="710" data-cat="فساتين" data-audience="women" data-desc="طقم خفيف من خامة كتانية يناسب اللعب والمشاوير." data-img="/manus-storage/3_a2a8084c.jpg" data-old="129 ر.س" data-price="159 ر.س" data-rating="5.0" data-reviews="210" data-tags="Spicy,Bestseller,Crispy" data-time="15" data-title="Nashville Hot فساتين">
+<div class="mimg">
+<img alt="فساتين" src="/manus-storage/3_a2a8084c.jpg"/>
+<div class="mbdg"><i class="fas fa-star"></i> الأكثر طلباً</div>
+<div class="mhrt"><i class="far fa-heart"></i></div>
+</div>
+<div class="mbody">
+<div class="mcat">فساتين</div>
+<div class="mtit">Nashville Hot فساتين</div>
+<div class="mdesc">طقم خفيف من خامة كتانية يناسب اللعب والمشاوير</div>
+<div class="mfoot">
+<div>
+<div class="mprice">159 ر.س <small>129 ر.س</small></div>
+<div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(210)</span></div>
+</div>
+<button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 col-lg-4 mwrap" data-aos="fade-up" data-c="wraps">
+<div class="mcard" data-cal="520" data-cat="أطقم" data-audience="women" data-desc="وشاح ناعم بلون الطين يضيف هدوءاً وأناقة لإطلالتك." data-img="/manus-storage/4_e7ce8d85.jpg" data-old="" data-price="89 ر.س" data-rating="4.5" data-reviews="74" data-tags="Grilled,Fresh,Mexican" data-time="10" data-title="وشاح ناعم بلون الطين">
+<div class="mimg">
+<img alt="Wrap" src="/manus-storage/4_e7ce8d85.jpg"/>
+<div class="mhrt"><i class="far fa-heart"></i></div>
+</div>
+<div class="mbody">
+<div class="mcat">أطقم</div>
+<div class="mtit">وشاح ناعم بلون الطين</div>
+<div class="mdesc">Grilled chicken, peppers, sour cream &amp; guacamole in a warm tortilla</div>
+<div class="mfoot">
+<div>
+<div class="mprice">89 ر.س</div>
+<div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(74)</span></div>
+</div>
+<button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 col-lg-4 mwrap" data-aos="fade-up" data-aos-delay="80" data-c="desserts">
+<div class="mcard" data-cal="390" data-cat="عروض خاصة" data-audience="kids" data-desc="طقم يومي ناعم للصغيرات، مريح للحركة واللعب." data-img="/manus-storage/5_37e34b79.jpg" data-old="169 ر.س" data-price="129 ر.س" data-rating="4.9" data-reviews="56" data-tags="Sweet,جديد,Chocolate" data-time="8" data-title="Nutella إكسسارات شعر">
+<div class="mimg">
+<img alt="إكسسارات شعر" src="/manus-storage/5_37e34b79.jpg"/>
+<div class="mbdg new"><i class="fas fa-star"></i> جديد</div>
+<div class="mhrt"><i class="far fa-heart"></i></div>
+</div>
+<div class="mbody">
+<div class="mcat">عروض خاصة</div>
+<div class="mtit">Nutella إكسسارات شعر</div>
+<div class="mdesc">Molten chocolate cake with Nutella center, vanilla ice cream &amp; caramel</div>
+<div class="mfoot">
+<div>
+<div class="mprice">129 ر.س <small>169 ر.س</small></div>
+<div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(56)</span></div>
+</div>
+<button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 col-lg-4 mwrap" data-aos="fade-up" data-aos-delay="160" data-c="pasta">
+<div class="mcard" data-cal="560" data-cat="إكسسوارات" data-audience="women" data-desc="حقيبة قماش عملية تحمل الأشياء الصغيرة بأناقة." data-img="/manus-storage/6_0bd9d411.jpg" data-old="" data-price="129 ر.س" data-rating="4.9" data-reviews="88" data-tags="Vegetarian,اختيار سطول,Italian" data-time="20" data-title="Truffle Mushroom إكسسوارات">
+<div class="mimg">
+<img alt="إكسسوارات" src="/manus-storage/6_0bd9d411.jpg"/>
+<div class="mbdg hot">اختيار سطول</div>
+<div class="mhrt"><i class="far fa-heart"></i></div>
+</div>
+<div class="mbody">
+<div class="mcat">إكسسوارات</div>
+<div class="mtit">Truffle Mushroom إكسسوارات</div>
+<div class="mdesc">Al dente tagliatelle, wild mushrooms, black truffle, parmesan &amp; thyme</div>
+<div class="mfoot">
+<div>
+<div class="mprice">129 ر.س</div>
+<div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(88)</span></div>
+</div>
+<button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="text-center mt-5"><a class="btn-red" href="#"><i class="fas fa-th-large"></i>View Full المتجر</a></div>
+</div>
+</section>
+
+<div id="menuPop">
+<div class="mpbox">
+<button class="mpclose" id="mpClose"><i class="fas fa-times"></i></button>
+<div class="mpimg"><img alt="" id="mpImg" src=""/></div>
+<div class="mpbody">
+<div id="mpCat"></div>
+<div id="mpTitle"></div><div class="mpgallery" id="mpGallery"></div><div class="mpsizes"><span>المقاس:</span><button data-size="XS">XS</button><button data-size="S">S</button><button data-size="M" class="selected">M</button><button data-size="L">L</button><button data-size="XL">XL</button></div><div class="mp-qty"><span>الكمية:</span><div class="qty-control"><button id="mpQtyMinus" type="button" aria-label="تقليل الكمية">−</button><input id="mpQty" type="number" min="1" max="99" value="1" aria-label="عدد القطع"><button id="mpQtyPlus" type="button" aria-label="زيادة الكمية">+</button></div></div>
+<div id="mpStars"></div>
+<div id="mpDesc"></div>
+<div id="mpPrice"></div>
+<div class="mpmeta" id="mpMeta"></div>
+<div class="mpqty">
+<button class="mpqbtn" id="mpMinus">-</button>
+<span class="mpqnum" id="mpQnum">1</span>
+<button class="mpqbtn" id="mpPlus">+</button>
+<span style="font-size:.82rem;color:#aaa;margin-left:9px;">قطعة</span>
+</div>
+<div class="mptags" id="mpTags"></div>
+<button class="mpaddcart" id="mpAddCart"><i class="fas fa-shopping-cart"></i>أضيفي إلى السلة</button>
+</div>
+</div>
+</div>
+
+<section id="special">
+<div class="spbg"></div>
+<div class="container" style="position:relative;z-index:2;">
+<div class="row align-items-center g-5">
+<div class="col-lg-6" data-aos="fade-right">
+<div class="sptag"><i class="fas fa-bolt me-1"></i>لفترة محدودة</div>
+<h2 class="sptitle">خصم 30%<br/>تشكيلتنا<br/><span>قطعة</span> مختارة</h2>
+<p class="spdesc">لا تفوّتي القطع المختارة لهذا الأسبوع؛ خامات جميلة وتفاصيل تستحق أن ترافقك.</p>
+<div class="cdwrap">
+<div class="cditem"><span class="cdnum" id="cdH">08</span><span class="cdlbl">ساعة</span></div>
+<div class="cditem"><span class="cdnum" id="cdM">45</span><span class="cdlbl">دقيقة</span></div>
+<div class="cditem"><span class="cdnum" id="cdS">30</span><span class="cdlbl">ثانية</span></div>
+</div>
+<a class="btn-red" href="#menu"><i class="fas fa-shopping-cart"></i>شاهدي العرض</a>
+</div>
+<div class="col-lg-6" data-aos="fade-left">
+<div class="spimgw">
+<div class="spglow"></div>
+<div class="sppbdg"><span class="old">279 ر.س</span><span class="np">$17.49</span></div>
+<img alt="Special قطعة" src="/manus-storage/off-img_c74636ce.jpg"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<div class="container">
+<div class="text-center mb-5" data-aos="fade-up">
+<span class="slbl">من تفاصيل سطول</span>
+<h2 class="stitle">شاهدي مختاراتنا <span>تليق بك</span></h2>
+<div class="sline"></div>
+</div>
+<div class="ggrid" data-aos="fade-up">
+<div class="gitem" data-gdesc="Our award-winning smash burgers, hand-crafted with 100% premium beef, aged cheddar and house-made sauces." data-gi="0" data-gimg="/manus-storage/work1_486cf91a.jpg" data-gtitle="Gourmet للسيدات">
+<img alt="للسيدات" src="/manus-storage/work1_486cf91a.jpg"/>
+<div class="gover"><span><i class="fas fa-expand-alt"></i> Gourmet للسيدات</span></div>
+</div>
+<div class="gitem" data-gdesc="Authentic Neapolitan-style pizzas fired at 900deg F in our wood-burning stone oven for the perfect char." data-gi="1" data-gimg="/manus-storage/work2_78f3fcc7.jpg" data-gtitle="Wood-Fired للأطفال">
+<img alt="للأطفال" src="/manus-storage/work2_78f3fcc7.jpg"/>
+<div class="gover"><span><i class="fas fa-expand-alt"></i> Wood-Fired للأطفال</span></div>
+</div>
+<div class="gitem" data-gdesc="Double-brined, hand-battered chicken fried to golden perfection using our 15-spice secret blend." data-gi="2" data-gimg="/manus-storage/work3_f4497ecc.jpg" data-gtitle="Crispy Fried فساتين">
+<img alt="فساتين" src="/manus-storage/work3_f4497ecc.jpg"/>
+<div class="gover"><span><i class="fas fa-expand-alt"></i> Crispy Fried فساتين</span></div>
+</div>
+<div class="gitem" data-gdesc="Handcrafted desserts - from molten lava cakes to artisan ice cream sundaes and seasonal pastries." data-gi="3" data-gimg="/manus-storage/work4_f828bcce.jpg" data-gtitle="Sweet عروض خاصة">
+<img alt="عروض خاصة" src="/manus-storage/work4_f828bcce.jpg"/>
+<div class="gover"><span><i class="fas fa-expand-alt"></i> Sweet عروض خاصة</span></div>
+</div>
+<div class="gitem" data-gdesc="Loaded fresh wraps packed with grilled proteins, crunchy vegetables and our house-made sauces." data-gi="4" data-gimg="/manus-storage/work5_c9e48b81.jpg" data-gtitle="Fresh أطقم &amp; Rolls">
+<img alt="أطقم" src="/manus-storage/work5_c9e48b81.jpg"/>
+<div class="gover"><span><i class="fas fa-expand-alt"></i> Fresh أطقم &amp; Rolls</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<div id="galPop">
+<div class="gpbox">
+<button class="gpclose" id="gpClose"><i class="fas fa-times"></i></button>
+<img alt="" id="gpImg" src=""/>
+<div class="gpcap">
+<h5 id="gpTitle"></h5>
+<p id="gpDesc"></p>
+</div>
+<div class="gpnav">
+<button id="gpالسابق"><i class="fas fa-chevron-left me-1"></i>السابق</button>
+<button id="gpالتالي">التالي <i class="fas fa-chevron-right ms-1"></i></button>
+</div>
+</div>
+</div>
+
+
+
+
+
+<section id="hours">
+<div class="hrsbg"></div>
+<div class="container" style="position:relative;z-index:2;">
+<div class="text-center mb-5" data-aos="fade-up">
+<span class="slbl" style="color:#a5d6bc;">Opening ساعة</span>
+<h2 class="stitle" style="color:#fff;">نحن هنا <span style="color:var(--secondary);">من أجلك</span></h2>
+<div class="sline"></div>
+</div>
+<div class="row g-4 align-items-start">
+<div class="col-lg-5" data-aos="fade-right">
+<div class="hrscard">
+<div class="hrsrow">
+<span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>السبت - الأحد</span>
+<div class="d-flex align-items-center gap-2">
+<div class="hdot off"></div>
+<span class="hrstime" style="color:#ff6b6b;">مغلق</span>
+</div>
+</div>
+<div class="hrsrow">
+<span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>الاثنين - الخميس</span>
+<div class="d-flex align-items-center gap-2">
+<div class="hdot on"></div>
+<span class="hrstime">09:00 ص - 10:00 م</span>
+</div>
+</div>
+<div class="hrsrow">
+<span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>الجمعة</span>
+<div class="d-flex align-items-center gap-2">
+<div class="hdot on"></div>
+<span class="hrstime">09:00 ص - 11:00 م</span>
+</div>
+</div>
+<div class="hrsrow">
+<span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>السبت</span>
+<div class="d-flex align-items-center gap-2">
+<div class="hdot on"></div>
+<span class="hrstime">10:00 ص - 11:30 م</span>
+</div>
+</div>
+<div class="hrsrow">
+<span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>الأحد</span>
+<div class="d-flex align-items-center gap-2">
+<div class="hdot on"></div>
+<span class="hrstime">11:00 ص - 09:00 م</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3" data-aos="zoom-in">
+<div class="hrscta">
+<i class="fas fa-truck-fast fa-2x mb-3" style="color:rgba(255,255,255,.8);"></i>
+<h4>اطلبي عبر الموقع</h4>
+<p>تصل اختياراتك بعناية</p>
+<a class="btnw" href="#menu">تسوقي الآن ?</a>
+</div>
+</div>
+<div class="col-lg-4" data-aos="fade-left">
+<div class="hrscard">
+<h5 style="color:#fff;margin-bottom:18px;font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;"><i class="fas fa-map-marker-alt me-2" style="color:var(--secondary);"></i>تواصلي معنا</h5>
+<div class="hrsrow"><span class="hrsday"><i class="fas fa-location-dot me-2" style="color:var(--secondary);"></i>العنوان</span><span class="hrstime" style="font-size:.8rem;">الرياض، المملكة العربية السعودية</span></div>
+<div class="hrsrow"><span class="hrsday"><i class="fas fa-phone me-2" style="color:var(--secondary);"></i>الهاتف</span><span class="hrstime" style="font-size:.8rem;">٠٥٠ ١٢٣ ٤٥٦٧</span></div>
+<div class="hrsrow"><span class="hrsday"><i class="fas fa-envelope me-2" style="color:var(--secondary);"></i>البريد الإلكتروني</span><span class="hrstime" style="font-size:.8rem;">hello@sotool.store</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<section id="reservation">
+<div class="container">
+<div class="text-center mb-5" data-aos="fade-up">
+<span class="slbl">اطلبي الآن</span>
+<h2 class="stitle">اجعليها <span>الطلب</span></h2>
+<div class="sline"></div>
+<p class="sdesc mx-auto" style="max-width:480px;">اختاري القطع التي تحبينها، وسنساعدك في إتمام الطلب والمقاس المناسب.</p>
+</div>
+<div class="row g-4 align-items-start">
+<div class="col-lg-4" data-aos="fade-right">
+<div style="background:var(--dark);border-radius:18px;padding:36px;">
+<h4 style="color:#fff;font-size:1.3rem;margin-bottom:8px;">تواصل معنا Info</h4>
+<p style="color:rgba(255,255,255,.55);font-size:.85rem;margin-bottom:26px;">يسعدنا مساعدتك في اختيار ما يناسبك.</p>
+<div class="d-flex flex-column gap-3">
+<div class="d-flex align-items-center gap-3">
+<div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-clock"></i></div>
+<div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Opening ساعة</strong><span style="color:#fff;font-size:.87rem;">السبت - الخميس، 9 ص - 11 م</span></div>
+</div>
+<div class="d-flex align-items-center gap-3">
+<div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-phone-alt"></i></div>
+<div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">تواصلي للطلب</strong><span style="color:#fff;font-size:.87rem;">٠٥٠ ١٢٣ ٤٥٦٧</span></div>
+</div>
+<div class="d-flex align-items-center gap-3">
+<div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-users"></i></div>
+<div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">طلبات المجموعات</strong><span style="color:#fff;font-size:.87rem;">تنسيقات خاصة للطلبات الكبيرة</span></div>
+</div>
+<div class="d-flex align-items-center gap-3">
+<div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-map-marker-alt"></i></div>
+<div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Location</strong><span style="color:#fff;font-size:.87rem;">الرياض، المملكة العربية السعودية</span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-8" data-aos="fade-left">
+<div class="fcard">
+<div class="row g-3">
+<div class="col-sm-6"><label class="flbl">الاسم الكامل *</label><input class="fctrl" placeholder="اكتبي اسمك الكامل" type="text"/></div>
+<div class="col-sm-6"><label class="flbl">الهاتف Number *</label><input class="fctrl" placeholder="+1 (800) 000-0000" type="tel"/></div>
+<div class="col-sm-6"><label class="flbl">البريد الإلكتروني العنوان *</label><input class="fctrl" placeholder="you@email.com" type="email"/></div>
+<div class="col-sm-6">
+<label class="flbl">عدد القطع *</label>
+<select class="fctrl">
+<option>قطعة واحدة</option>
+<option>قطعتان</option>
+<option>3 - 4 قطع</option>
+<option>5 - 6 قطع</option>
+<option>7 - 10 قطع</option>
+<option>أكثر من 10 قطع</option>
+</select>
+</div>
+<div class="col-sm-6"><label class="flbl">التاريخ *</label><input class="fctrl" type="date"/></div>
+<div class="col-sm-6">
+<label class="flbl">الوقت *</label>
+<select class="fctrl">
+<option>09:00 AM</option>
+<option>10:00 AM</option>
+<option>11:00 AM</option>
+<option>12:00 PM</option>
+<option>01:00 PM</option>
+<option>02:00 PM</option>
+<option>06:00 PM</option>
+<option>07:00 PM</option>
+<option>08:00 PM</option>
+<option>09:00 PM</option>
+<option>10:00 PM</option>
+</select>
+</div>
+<div class="col-12"><label class="flbl">ملاحظات إضافية</label><textarea class="fctrl" placeholder="Allergies, dietary needs, special occasions..." rows="3"></textarea></div>
+<div class="col-12"><button class="btn-red w-100 justify-content-center" id="resBtn"><i class="fas fa-calendar-check"></i>Confirm الطلب</button></div>
+</div>
+<div class="sucmsg" id="resOk">
+<i class="fas fa-check-circle"></i>
+<p>Table reserved! We'll confirm via email shortly.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="blog">
+<div class="container">
+<div class="text-center mb-5" data-aos="fade-up">
+<span class="slbl">جديدs &amp; Updates</span>
+<h2 class="stitle">Our Latest <span>Blog</span> Posts</h2>
+<div class="sline"></div>
+</div>
+<div class="row g-4">
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+<div class="blcard">
+<div class="blimg">
+<img alt="" src="/manus-storage/1_cdbf2f85.jpg"/>
+<div class="bldatebdg"><span class="bd">14</span><span class="bm">Mar</span></div>
+</div>
+<div class="blbody">
+<div class="bltag">Food &amp; Health</div>
+<div class="bltit"><a href="#">Healthy تليق بك: A Myth or Beautiful Reality</a></div>
+<div class="blmeta"><span><i class="fas fa-user"></i>James Writer</span><span><i class="fas fa-comment"></i>24 Comments</span></div>
+<a class="blmore" href="#">Read More <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+<div class="blcard">
+<div class="blimg">
+<img alt="" src="/manus-storage/2_f922cbf1.jpg"/>
+<div class="bldatebdg"><span class="bd">28</span><span class="bm">Feb</span></div>
+</div>
+<div class="blbody">
+<div class="bltag">Food Science</div>
+<div class="bltit"><a href="#">Is تليق بك Getting Healthier? Here's What We Found</a></div>
+<div class="blmeta"><span><i class="fas fa-user"></i>Sarah Grain</span><span><i class="fas fa-comment"></i>18 Comments</span></div>
+<a class="blmore" href="#">Read More <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
+<div class="blcard">
+<div class="blimg">
+<img alt="" src="/manus-storage/3_5f284161.jpg"/>
+<div class="bldatebdg"><span class="bd">05</span><span class="bm">Jan</span></div>
+</div>
+<div class="blbody">
+<div class="bltag">Recipes</div>
+<div class="bltit"><a href="#">Innovative Hot Chickpeas Flake Crackin' Recipe at الرئيسية</a></div>
+<div class="blmeta"><span><i class="fas fa-user"></i>Chef Marcus</span><span><i class="fas fa-comment"></i>32 Comments</span></div>
+<a class="blmore" href="#">Read More <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="newsletter">
+<div class="nlbg"></div>
+<div class="container">
+<div class="nlw text-center" data-aos="zoom-in">
+<span class="slbl" style="color:rgba(255,255,255,.7);">Stay Connected</span>
+<h2 class="mb-3" style="color:#fff;">Subscribe &amp; Get Exclusive <span style="color:var(--secondary);">Deals</span></h2>
+<p class="mb-4" style="color:rgba(255,255,255,.78);">Get 15% off your first order plus early access to new menu items</p>
+<div class="nl-form-wrap">
+<input class="nlinput" id="nlالبريد الإلكتروني" placeholder="Enter your email address..." type="email"/>
+<button class="nlbtn" id="nlBtn"><i class="fas fa-paper-plane me-1"></i>Subscribe</button>
+</div>
+<p style="color:rgba(255,255,255,.45);font-size:.76rem;margin-top:11px;"><i class="fas fa-lock me-1"></i>No spam, unsubscribe anytime.</p>
+</div>
+</div>
+</section>
+
+<section id="contact-section">
+<div class="container">
+<div class="text-center mb-5" data-aos="fade-up">
+<span class="slbl">Get In Touch</span>
+<h2 class="stitle">تواصل معنا <span>Us</span></h2>
+<div class="sline"></div>
+<p class="sdesc mx-auto" style="max-width:480px;">Have a question, feedback, or want to plan a special event? We'd love to hear from you.</p>
+</div>
+<div class="row g-4">
+<div class="col-lg-4" data-aos="fade-right">
+<div class="ctdark">
+<h4>Let's Talk</h4>
+<p class="ctsub">We typically respond within 2 hours during business hours.</p>
+<div class="ctitem">
+<div class="cticon"><i class="fas fa-map-marker-alt"></i></div>
+<div class="ctinfo"><strong>العنوان</strong><span>42 Flavor Street, Manhattan,<br/>جديد York, NY 10001</span></div>
+</div>
+<div class="ctitem">
+<div class="cticon"><i class="fas fa-phone-alt"></i></div>
+<div class="ctinfo"><strong>الهاتف</strong><span>٠٥٠ ١٢٣ ٤٥٦٧</span></div>
+</div>
+<div class="ctitem">
+<div class="cticon"><i class="fas fa-envelope"></i></div>
+<div class="ctinfo"><strong>البريد الإلكتروني</strong><span>hello@sotool.store</span></div>
+</div>
+<div class="ctitem">
+<div class="cticon"><i class="fas fa-clock"></i></div>
+<div class="ctinfo"><strong>Working ساعة</strong><span>Wed - Sun: 9 AM - 11 PM</span></div>
+</div>
+<div class="ctsocrow">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+</div>
+</div>
+</div>
+<div class="col-lg-8" data-aos="fade-left">
+<div class="fcard">
+<div class="row g-3">
+<div class="col-sm-6"><label class="flbl">الاسم الكامل *</label><input class="fctrl" placeholder="اكتبي اسمك الكامل" type="text"/></div>
+<div class="col-sm-6"><label class="flbl">البريد الإلكتروني العنوان *</label><input class="fctrl" placeholder="you@email.com" type="email"/></div>
+<div class="col-sm-6"><label class="flbl">الهاتف Number</label><input class="fctrl" placeholder="+1 (800) 000-0000" type="tel"/></div>
+<div class="col-sm-6">
+<label class="flbl">Subject *</label>
+<select class="fctrl">
+<option>General Inquiry</option>
+<option>Catering &amp; Events</option>
+<option>من تجاربهن</option>
+<option>Partnership</option>
+<option>Media &amp; Press</option>
+</select>
+</div>
+<div class="col-12"><label class="flbl">Message *</label><textarea class="fctrl" placeholder="Write your message here..." rows="5"></textarea></div>
+<div class="col-12"><button class="btn-red" id="ctcBtn"><i class="fas fa-paper-plane"></i>Send Message</button></div>
+</div>
+<div class="sucmsg" id="ctcOk">
+<i class="fas fa-check-circle"></i>
+<p>Message sent! We'll reply within 2 hours.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="row g-5">
+<div class="col-lg-4">
+<div class="fnm">متجر سطول</div>
+<p class="fdesc">We bring the world's finest flavors together in a fast, friendly, and affordable experience. Every meal crafted with love.</p>
+<div class="fsoc">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+<a href="#"><i class="fab fa-tiktok"></i></a>
+</div>
+</div>
+<div class="col-sm-6 col-lg-2">
+<div class="ftit">Quick Links</div>
+<ul class="flinks ps-0">
+<li><a href="#hero"><i class="fas fa-chevron-right"></i>الرئيسية</a></li>
+<li><a href="#about"><i class="fas fa-chevron-right"></i>عن سطول Us</a></li>
+<li><a href="#menu"><i class="fas fa-chevron-right"></i>Our المتجر</a></li>
+<li><a href="#reservation"><i class="fas fa-chevron-right"></i>الطلب</a></li>
+<li><a href="#blog"><i class="fas fa-chevron-right"></i>Blog</a></li>
+<li><a href="#contact-section"><i class="fas fa-chevron-right"></i>تواصل معنا</a></li>
+</ul>
+</div>
+<div class="col-sm-6 col-lg-2">
+<div class="ftit">Our المتجر</div>
+<ul class="flinks ps-0">
+<li><a href="#menu"><i class="fas fa-chevron-right"></i>للسيدات</a></li>
+<li><a href="#menu"><i class="fas fa-chevron-right"></i>للأطفال</a></li>
+<li><a href="#menu"><i class="fas fa-chevron-right"></i>Fried فساتين</a></li>
+<li><a href="#menu"><i class="fas fa-chevron-right"></i>أطقم &amp; Rolls</a></li>
+<li><a href="#menu"><i class="fas fa-chevron-right"></i>إكسسوارات</a></li>
+<li><a href="#menu"><i class="fas fa-chevron-right"></i>عروض خاصة</a></li>
+</ul>
+</div>
+<div class="col-lg-4">
+<div class="ftit">Get In Touch</div>
+<div class="fci">
+<div class="fciico"><i class="fas fa-map-marker-alt"></i></div>
+<div class="fciinfo"><strong>العنوان</strong>42 Flavor Street, Manhattan, NY 10001</div>
+</div>
+<div class="fci">
+<div class="fciico"><i class="fas fa-phone-alt"></i></div>
+<div class="fciinfo"><strong>الهاتف</strong>٠٥٠ ١٢٣ ٤٥٦٧</div>
+</div>
+<div class="fci">
+<div class="fciico"><i class="fas fa-envelope"></i></div>
+<div class="fciinfo"><strong>البريد الإلكتروني</strong>hello@sotool.store</div>
+</div>
+<div class="fci">
+<div class="fciico"><i class="fas fa-clock"></i></div>
+<div class="fciinfo"><strong>ساعة</strong>Wed - Sun: 09 AM - 11 PM</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fbot">
+<div class="container">
+<div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+<p>© 2026 <span>Sarab سطول</span>. All Rights Reserved by <a class="mx-0 fw-bold text-success" href="https://bestwpware.com/" target="_blank">Bestwpware</a>. Made with <span><i class="fas fa-heart"></i></span> <br/>Distributed by <a class="mx-0 fw-bold text-success" href="https://themewagon.com" target="_blank">ThemeWagon</a></p>
+<div><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+</div>
+</div>
+</div>
+</footer>
+
+
+
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-chevron-up"></i></button>
+
+
+
+
+
+
+
+
+
+
+
+
+<button class="cart-fab" id="cartFab" aria-label="فتح السلة"><i class="fas fa-shopping-bag"></i><span id="cartCount">0</span></button><div class="cart-drawer" id="cartDrawer"><div class="cart-head"><strong>سلة مشترياتك</strong><button id="cartClose" aria-label="إغلاق السلة"><i class="fas fa-times"></i></button></div><div id="cartItems" class="cart-items"><p class="cart-empty">السلة فارغة حالياً.</p></div><div class="cart-foot"><div><span>الإجمالي</span><strong id="cartTotal">0 ر.س</strong></div><button class="btn-red" id="checkoutOpen"><i class="fab fa-whatsapp"></i> إتمام الطلب عبر واتساب</button></div></div><div class="checkout-modal" id="checkoutModal"><div class="checkout-box"><button class="checkout-close" id="checkoutClose"><i class="fas fa-times"></i></button><span class="slbl">إتمام الطلب</span><h3>أرسلي طلبك مباشرة</h3><p>أدخلي بياناتك وسنفتح واتساب برسالة طلب جاهزة إلى متجر سطول.</p><form id="whatsappForm"><input id="waName" required placeholder="الاسم الكامل"><input id="waPhone" required type="tel" placeholder="رقم الهاتف"><input id="waAddress" required placeholder="العنوان والمدينة"><textarea id="waNotes" rows="3" placeholder="ملاحظات إضافية أو المقاسات"></textarea><section class="order-preview" id="orderPreview" aria-live="polite">
+  <div class="order-preview-head">
+    <div><span class="preview-kicker">مراجعة أخيرة</span><h4>ملخص طلبك</h4></div>
+    <span class="preview-badge"><i class="fas fa-shield-heart"></i> جاهز للمراجعة</span>
+  </div>
+  <div id="orderPreviewItems" class="order-preview-items"><p class="preview-empty">أضيفي منتجًا إلى السلة ليظهر هنا.</p></div>
+  <div class="order-preview-total"><span>الإجمالي المتوقع</span><strong id="orderPreviewTotal">0 ر.س</strong></div>
+  <div class="order-preview-customer" id="orderPreviewCustomer">أكملي بيانات التواصل للتأكد من تفاصيل التوصيل.</div>
+</section><button class="btn-red w-100" type="submit"><i class="fab fa-whatsapp"></i> إرسال الطلب عبر واتساب</button></form></div></div><div class="success-modal" id="successModal" role="dialog" aria-modal="true" aria-labelledby="successTitle" aria-hidden="true"><div class="success-box"><button class="success-close" id="successClose" type="button" aria-label="إغلاق رسالة التأكيد"><i class="fas fa-times"></i></button><div class="success-icon"><i class="fab fa-whatsapp"></i></div><span class="success-kicker">تم تجهيز طلبك</span><h3 id="successTitle">تم تحويلك إلى واتساب</h3><p>شكرًا لكِ. ستجدين رسالة الطلب جاهزة في واتساب لإكمال التأكيد مع متجر سطول.</p><button class="btn-red success-action" id="successDone" type="button">حسنًا، فهمت</button></div></div><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="store-sotool.js"></script></body></html>

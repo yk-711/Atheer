@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تسجيل الدخول | متجر سطول</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="background-orb orb-1"></div>
+  <div class="background-orb orb-2"></div>
+
+  <main class="auth-card">
+    <section class="brand">
+      <div class="logo">✦</div>
+      <span class="small-title">SOTOOL STORE</span>
+      <h1>مرحباً بك<br><strong>في عالمك الخاص</strong></h1>
+      <div class="gold-line"></div>
+      <p>تجربة دخول عصرية وفاخرة، بنفس الهوية الذهبية والسوداء لمتجر سطول.</p>
+    </section>
+
+    <section class="form-area">
+      <div id="loginBox" class="form-box">
+        <h2>تسجيل الدخول</h2>
+        <p class="hint">أدخل بياناتك للوصول إلى حسابك</p>
+
+        <form id="loginForm">
+          <div class="field">
+            <label for="loginEmail">البريد الإلكتروني</label>
+            <input id="loginEmail" type="email" autocomplete="email" placeholder="example@email.com" required>
+          </div>
+
+          <div class="field">
+            <label for="loginPassword">كلمة المرور</label>
+            <div class="password-box">
+              <input id="loginPassword" type="password" autocomplete="current-password" placeholder="••••••••" required>
+              <button type="button" class="eye" data-password="loginPassword">إظهار</button>
+            </div>
+          </div>
+
+          <div class="options">
+            <label class="remember">
+              <input id="rememberMe" type="checkbox">
+              <span>تذكرني</span>
+            </label>
+            <button type="button" class="link-btn" id="forgotButton">نسيت كلمة المرور؟</button>
+          </div>
+
+          <button class="main-btn" type="submit">تسجيل الدخول</button>
+        </form>
+
+        <div class="divider"><span>أو</span></div>
+
+        <button class="google-btn" type="button" id="googleLoginButton">
+          <span class="google-icon">G</span>
+          المتابعة باستخدام Google
+        </button>
+
+        <p class="switch">ليس لديك حساب؟
+          <button type="button" id="showRegisterButton">إنشاء حساب</button>
+        </p>
+
+        <p id="loginMessage" class="message" role="alert"></p>
+      </div>
+
+      <div id="registerBox" class="form-box hidden">
+        <h2>إنشاء حساب</h2>
+        <p class="hint">أنشئ حسابك وابدأ تجربتك معنا</p>
+
+        <form id="registerForm">
+          <div class="field">
+            <label for="registerName">الاسم الكامل</label>
+            <input id="registerName" type="text" autocomplete="name" placeholder="اكتب اسمك" minlength="2" maxlength="100" required>
+          </div>
+
+          <div class="field">
+            <label for="registerEmail">البريد الإلكتروني</label>
+            <input id="registerEmail" type="email" autocomplete="email" placeholder="example@email.com" required>
+          </div>
+
+          <div class="field">
+            <label for="registerPassword">كلمة المرور</label>
+            <div class="password-box">
+              <input id="registerPassword" type="password" autocomplete="new-password" placeholder="8 أحرف على الأقل" minlength="8" required>
+              <button type="button" class="eye" data-password="registerPassword">إظهار</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="confirmPassword">تأكيد كلمة المرور</label>
+            <input id="confirmPassword" type="password" autocomplete="new-password" placeholder="أعد كتابة كلمة المرور" required>
+          </div>
+
+          <button class="main-btn" type="submit">إنشاء الحساب</button>
+        </form>
+
+        <div class="divider"><span>أو</span></div>
+
+        <button class="google-btn" type="button" id="googleRegisterButton">
+          <span class="google-icon">G</span>
+          التسجيل باستخدام Google
+        </button>
+
+        <p class="switch">لديك حساب بالفعل؟
+          <button type="button" id="showLoginButton">تسجيل الدخول</button>
+        </p>
+
+        <p id="registerMessage" class="message" role="alert"></p>
+      </div>
+    </section>
+      <p style="text-align:center;margin-top:18px"><a href="/" style="color:var(--gold);text-decoration:none">العودة إلى المتجر</a></p>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+</html>
